@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//soma ate o usuario digitar numero negativo, porem separando os pares dos impares;
+
+int main(){
+	
+    int num, par, impar;
+
+    printf("Digite um numero: ");
+    scanf("%i", &num);
+
+    while (num >= 0){
+        printf("Digite outro numero: ");
+        scanf("%i", &num);
+
+        if (num = (num % 2 = 0)){
+            num = par;
+        }
+        
+        if (num % 2 !=0){
+            num = impar;
+        }
+
+        par ++;
+        impar ++;
+
+        printf("%i", par);
+        printf("%i", impar);
+    }
+
+	return 0;
+}
