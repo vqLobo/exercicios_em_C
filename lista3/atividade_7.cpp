@@ -5,21 +5,20 @@
 
 int main(){
 	
-    int num, soma, calculo;
+    int num1, acumulador = 0, diferenciador;
 
     printf("Digite um numero: ");
-    scanf("%i", &num);
+    scanf("%i", &num1);
 
-    while (num != 0){
+    diferenciador = num1;
+	
+    while (num1 != 0){
         printf("Digite outro numero: ");
-        scanf("%i", &num);
-
-        soma += num;
+        scanf("%i", &num1);
+	acumulador += num1;
     }
 
-    calculo = soma + num;
-
-    printf("A soma de todos os numeros digitados (ate o usuario escrever 0) eh igual a %i", calculo);
-
-	return 0;
+    printf("A soma de todos os numeros digitados (ate o usuario escrever 0) eh igual a %i", acumulador + diferenciador);
+	
+    return 0;
 }
