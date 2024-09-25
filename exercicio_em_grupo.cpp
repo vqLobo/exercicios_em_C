@@ -5,29 +5,36 @@
 
 int main(){
 
-    int escolha, num1, num2;
-
-    printf("Digite quantos numeros vc quer que a sequencia tenha: ");
-    scanf("%i", &escolha);
-
-    while(escolha != 0){
-
-        printf("Digite um numero:");
-        scanf("%i", &num1);
-
-        printf("Digite outro numero:");
-        scanf("%i", &num2);
-
-        if(num1 < num2){
-            printf("A ordem eh crescente. \n");
-        } else if (num2 < num1){
-            printf("A ordem eh decrescente. \n");
-        } else {
-            printf("Sao iguais.");
+    int n1, n2, n3, botao_deligar;
+    
+    printf("Insira 3 numeros, o programa dirah se eles estao em ordem crescente ou decrescente. Caso queria encerrar o programa, eh so digitar 3 numeros iguais.\n");
+    
+    printf("Digite quantas vezes quer botar uma sequencia: ");
+    scanf("%i", &botao_deligar);
+    
+    while (botao_deligar != 0){
+    
+        printf("\nInsira o primeiro numero:");
+        scanf("%d", &n1);
+        
+        printf("Insira o segundo numero:");
+        scanf("%d", &n2);
+    
+        printf("Insira o terceiro numero:");
+        scanf("%d", &n3);
+        
+        if ((n1 > n2) && (n2 > n3)){
+            printf("A ordem eh decrescente.");
+        } else if ((n3 > n2) && (n2 > n1)){
+            printf("A ordem eh crescente.");
+        } else if ((n1 == n2) && (n2 == n3)){
+            break;
+        } else{
+            printf("Nem crescente nem decrescente.");
         }
-
-        escolha --;
+    
+    	botao_deligar --;
     }
-
-return 0;
+	     
+	return 0;
 }
