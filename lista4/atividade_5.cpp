@@ -4,8 +4,7 @@
 int main(){
 
     int escolha;
-    int numeros;
-    int minimo, maximo;
+    int numeros;
 
     printf("Digite quantos numeros deseja inserir: ");
     scanf("%i", &escolha);
